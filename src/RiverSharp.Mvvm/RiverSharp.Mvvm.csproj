@@ -4,11 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\RiverSharp.Mvvm.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Command\" />
     <Folder Include="Helpers\" />
     <Folder Include="Ioc\" />
-    <Folder Include="Messaging\" />
   </ItemGroup>
 
 </Project>
